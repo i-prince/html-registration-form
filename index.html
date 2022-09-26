@@ -13,7 +13,7 @@
     <p>Please fill out this form with the required information</p>
 
     <form action="https://register-demo.freecodecamp.org">
-        <fieldset>
+        <fieldset> <!--Accepts users names and email and allows them to create a password for their account-->
             <!--the "for statement is used for accessibility best practices"-->
             <label for="first-name">Enter Your First Name:
                <input id="first-name" type="text" required/> 
@@ -29,7 +29,7 @@
             </label>
         </fieldset>
     
-        <fieldset>
+        <fieldset> <!--Allows user to select the type of account being created and agree to terms and conditions-->
             <label for="personal-account">
                 <input id="personal-account" type="radio" name="account-type"/> Personal Account
             </label>
@@ -41,7 +41,27 @@
             </label>
         </fieldset>
 
-        <fieldset>
+        <fieldset> <!--Allows the user to upload a profile picture-->
+            <label for="profile-picture"> Upload a Profile Picture:
+                <input id="profile-picture" type="file">
+            </label>
+            <label for="age">
+                Input your age (years):
+                <input id="age" type="number" min="13" max="120"/> <!--maximum and minimum accepted ages-->
+            </label>
+            <label for="referrer"> How did you hear about us:
+                <select id="referrer">
+                    <option value="">(select one)</option> <!--the values assign the options to the numbers-->
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">
+                Provide a bio:
+                <textarea id="bio" rows="3" cols="30" placeholder="Coding, as life, is a journey..."></textarea>   <!--rows and cols enlarge the text-area-->
+            </label>
             
         </fieldset>
 
