@@ -14,17 +14,17 @@
 
     <form action="https://register-demo.freecodecamp.org">
         <fieldset>
-            <label>Enter Your First Name:
-               <input/> 
+            <label for="first-name">Enter Your First Name:
+               <input id="first-name" type="text" required/> 
             </label>
-            <label>Enter Your Last Name:
-                <input/>
+            <label for="last-name">Enter Your Last Name:
+                <input id="last-name" type="text" required/>
             </label>
-            <label>Enter Your Email:
-                <input/>
+            <label for="email">Enter Your Email:
+                <input id="email" type="email" required/>
             </label>
-            <label>Create Your Password:
-                <input/>
+            <label for="new-password">Create Your Password:
+                <input id="new-passord" type="password" required pattern="[a-z0-5]{8,}"/>
             </label>
         </fieldset>
 
@@ -35,6 +35,8 @@
         <fieldset>
             
         </fieldset>
+
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
