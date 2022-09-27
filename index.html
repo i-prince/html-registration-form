@@ -31,19 +31,19 @@
     
         <fieldset> <!--Allows user to select the type of account being created and agree to terms and conditions-->
             <label for="personal-account">
-                <input id="personal-account" name="account-type" class="dashicons dashicons-nametag"><name="account-type"> type="radio" name="account-type"/> Personal Account
+                <input class="inline" id="personal-account" name="account-type" name="account-type" type="radio" name="account-type"/> Personal Account
             </label>
             <label for="business-account">
-                <input id="business-account" type="radio" name="account-type"/> Business Account
+                <input class="inline" id="business-account" name="account-type" type="radio" /> Business Account
             </label>
             <label for="terms-and-conditions">
-                <input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required/> <a href="https://www.freecodecamp.org/news/terms-of-service/">accept the terms and conditions</a> 
+                <input class="inline" id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required/> <a href="https://www.freecodecamp.org/news/terms-of-service/">accept the terms and conditions</a> 
             </label>
         </fieldset>
 
         <fieldset> <!--Allows the user to upload a profile picture-->
             <label for="profile-picture"> Upload a Profile Picture:
-                <input id="profile-picture" type="file">
+                <input class="picture" id="profile-picture" type="file">
             </label>
             <label for="age">
                 Input your age (years):
@@ -62,10 +62,9 @@
                 Provide a bio:
                 <textarea id="bio" rows="3" cols="30" placeholder="Coding, as life, is a journey..."></textarea>   <!--rows and cols enlarge the text-area-->
             </label>
-            
         </fieldset>
 
-        <input type="submit" value="submit">
+        <input name="submit" type="submit" value="submit">
     </form>
 </body>
 </html>
